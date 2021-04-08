@@ -1,0 +1,23 @@
+
+.soctial-icon-link{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover ,
+    &:focus {
+        fill: var(--title-color);
+        background-color: var(--accent-color);
+        }
+}
+
+.soctial-icon{  
+    width: 20px;
+    height: 20px;
+}

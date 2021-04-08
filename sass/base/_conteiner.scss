@@ -1,0 +1,30 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px; 
+
+    .footer &{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        flex-wrap: nowrap;
+    }
+
+    .header &{
+        display: flex;
+        align-items: center;
+        padding-bottom: 25px;
+        padding-left: 15px;
+        padding-top: 24px; 
+    }
+
+    .hero &,
+    .section &{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+

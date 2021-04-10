@@ -7,6 +7,7 @@
   --background-color: #F5F4FA;
   --section-pt-pb: 94px;
   --section-mr: 30px;
+  --section-pt-pb-mv-tv: 60px;
 }
 
 .visually-hidden {
@@ -56,12 +57,12 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin: 0 auto;
   }
   .header .container {
     display: flex;
@@ -504,9 +505,6 @@ body {
     margin-right: 10px;
     fill: currentColor;
   }
-}
-
-@media screen and (max-width: 1199px) {
   .header-contakt {
     display: flex;
     flex-direction: column;
@@ -545,6 +543,12 @@ body {
   }
   .header-contakt__list:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .header-contakt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 

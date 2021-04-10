@@ -256,10 +256,7 @@
         fill: currentColor;
     }
 
-}
-
-@media screen and (max-width: 1199px){
-.header-contakt{
+    .header-contakt{
         display: flex;
         flex-direction: column;
         
@@ -274,6 +271,8 @@
     }
 
 }
+
+
 
 @media screen and (min-width: 1200px){
     .logo {
@@ -309,13 +308,19 @@
         font-size: 14px;
         line-height: 1.14;
     }
-
     
     .header-contakt__list{
         &:not(:last-child){
             margin-right: 30px;
+            margin-bottom: 0;
         }
     }
+
+    .header-contakt{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    } 
 }
 
 // .header{

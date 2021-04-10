@@ -56,7 +56,6 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -312,6 +311,7 @@ body {
   padding-bottom: 10px;
   padding-top: 10px;
   background-color: var(--title-color);
+  border-bottom: 1px solid #ECECEC;
 }
 
 .nav-list {
@@ -365,7 +365,7 @@ body {
 }
 
 .is-open {
-  transform: translateY(0);
+  transform: translateY(0) translateX(-50%);
 }
 
 .mobil-model__btn {
@@ -377,6 +377,79 @@ body {
 .mobil-model__icon {
   width: 40px;
   height: 40px;
+}
+
+.mobil-model__icon:focus, .mobil-model__icon:hover {
+  fill: var(--accent-color);
+}
+
+.mobil-model-list {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobil-model-list__title:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobil-model-list__link {
+  color: var(--text-color);
+}
+
+.mobil-model-list__link:focus, .mobil-model-list__link:hover {
+  color: var(--accent-color);
+}
+
+.mobil-model-contakt__tel {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobil-model-contakt__list:not(:last-child) {
+  margin-bottom: 32px;
+  margin-top: 302px;
+}
+
+.mobil-model-contakt__list:not(:first-child) {
+  margin-bottom: 64px;
+}
+
+.mobil-model-contakt__mail {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobil-model-social {
+  display: flex;
+}
+
+.mobil-model-social__list:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobil-model-social__list:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobil-model-social__link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 .description {

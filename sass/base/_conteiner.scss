@@ -4,9 +4,9 @@
      
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
     .container{
-        width: 480px;
+        max-width: 480px;
         margin: 0 auto;
         
             .header &{
@@ -17,7 +17,8 @@
             }
 
         .hero &,
-        .section &{
+        .section &,
+        .usteam{
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -25,25 +26,38 @@
         }
 
     }
+
+    .uswork{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .container{
-        width: 768px;
+        max-width: 768px;
         
         .header &{
             display: flex;
             align-items: center;
         }
+
+        
     }
+
+    
 }
 
 @media screen and (min-width: 1200px) {
     .container{
-        width: 1200px;
+        max-width: 1200px;
 
     }
+
+    .uswork{
+        display: block;
+    }
 }
+
 
 
 // .container{

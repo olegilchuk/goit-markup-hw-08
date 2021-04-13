@@ -776,10 +776,6 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.usteam-blok:not(:last-child) {
-  margin-bottom: var(--section-mr);
-}
-
 .usteam-item {
   padding-top: var(--section-mr);
   padding-bottom: 24px;
@@ -817,7 +813,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .usteam-blok__img {
-    width: 450px;
+    max-width: 450px;
     height: 460px;
   }
 }
@@ -827,15 +823,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
+    margin-left: -30px;
   }
   .usteam-blok {
     margin: var(--section-mr) var(--section-mr) 0 0;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     flex-basis: calc(100% / 2 - 30px);
-  }
-  .usteam-blok:not(:last-child) {
-    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
   }
   .usteam-blok__img {
     width: 354px;
@@ -850,12 +846,10 @@ body {
     border-radius: 0px 0px 4px 4px;
     flex-basis: calc(100% / 4 - 30px);
   }
-  .usteam-blok:not(:last-child) {
-    margin-right: 30px;
-  }
   .usteam-list {
     display: flex;
     margin-top: -30px;
+    margin-left: -30px;
   }
   .usteam-blok__img {
     width: 270px;
@@ -864,24 +858,26 @@ body {
 }
 
 .clients {
-  padding-top: var(--section-pt-pb);
-  padding-bottom: var(--section-pt-pb);
+  padding-top: var(--section-pt-pb-mv-tv);
+  padding-bottom: var(--section-pt-pb-mv-tv);
 }
 
 .clients__header {
   font-family: var(--main-font);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--text-color);
 }
 
 .clients-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .clients-list__item--link {
@@ -889,8 +885,8 @@ body {
   justify-content: center;
   align-items: center;
   fill: #AFB1B8;
-  width: 170px;
-  height: 90px;
+  width: 210px;
+  height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -903,6 +899,13 @@ body {
 
 .clients-list__item:not(:last-child) {
   margin-right: var(--section-mr);
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list__item {
+    margin: var(--section-mr) var(--section-mr) 0 0;
+    flex-basis: calc(100% / 2 - 30px);
+  }
 }
 
 .price-section {

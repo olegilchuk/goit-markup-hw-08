@@ -1,8 +1,7 @@
 .footer {
-    padding-top : 60px;
-    padding-bottom: 60px;
-    background: #2F303A;
-    
+    padding-top : var(--section-pt-pb-mv-tv);
+    padding-bottom: var(--section-pt-pb-mv-tv);
+    background: #2F303A;  
 }
 
 .logo--word-bottom{
@@ -31,25 +30,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-list__address-title{
-    &:not(:last-child){
-        margin-bottom: 6px;
-    }
-}
-
-.footer-list__title{
-    &:not(:last-child){
-        margin-bottom: 20px;
-    }
-}
-
-.footer-social{
-    margin-left: 70px;
-}
-
 .footer-social--text{
-    margin-bottom: 20px;
-    margin-top: 12px;
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 14px;
@@ -70,7 +51,6 @@
         margin-right: 10px;
     }
 }
-
 
 .footer-social__icon{
     display:flex;
@@ -95,10 +75,6 @@
     height: 20px;
 }
 
-.footer-mailing__list{
-    display: flex;
-}
-
 .footer-mailing--header{
     margin-bottom: 20px;
     margin-top: 12px;
@@ -112,22 +88,15 @@
     color: var(--title-color);
 }
 
-.footer-mailing{
-    margin-left: 95px;
-}
-
 .footer-mailing__list--mail{
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 358px;
-    height: 50px;
-    left: 815px;
-    top: 2785px;
+
     background: #2F303A;
     color: var(--title-color);
-    padding-left: 16px;
+
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 16px;
@@ -145,7 +114,6 @@
     padding-left: 24px;
     width: 200px;
     height: 50px;
-    margin-left: 12px;
     display: flex;
     align-items: center;
 }
@@ -156,3 +124,220 @@
     fill:var(--title-color);
     margin-left: 10px;
 }
+
+@media screen and (min-width: 320px){
+
+    .footer-list__address-list{
+        margin-top: 20px;
+    }
+
+    .footer-list__address-title{
+        &:not(:last-child){
+        margin-bottom: 8px;
+        }
+    }
+
+    .footer-social--text,
+    .footer-mailing__list,
+    .footer-mailing--header,
+    .footer-mailing__list--mail{
+        margin-bottom: 20px;
+    }
+
+    .footer-mailing{
+        margin-top: var(--section-pt-pb-mv-tv);
+
+    }
+
+    .footer-list,
+    .footer-mailing,
+    .footer-mailing__list,
+    .footer-social,
+    .footer-list__address-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .footer-mailing__list--mail{
+        width: 450px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .footer-social{
+        margin-top: var(--section-pt-pb-mv-tv);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .footer-social{
+        margin-left: 165px;
+        margin-top: 5px;
+    }
+}
+
+
+
+// .footer {
+//     padding-top : 60px;
+//     padding-bottom: 60px;
+//     background: #2F303A;
+    
+// }
+
+// .logo--word-bottom{
+//     color: var(--title-color);
+// }
+
+// .footer-list__address {
+//     font-style: normal;
+// }
+
+// .footer-list__address--map{
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+    
+//     color: var(--title-color);
+// }
+
+// .footer-list__address--link{
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+    
+//     color: rgba(255, 255, 255, 0.6);
+// }
+
+// .footer-list__address-title{
+//     &:not(:last-child){
+//         margin-bottom: 6px;
+//     }
+// }
+
+// .footer-list__title{
+//     &:not(:last-child){
+//         margin-bottom: 20px;
+//     }
+// }
+
+// .footer-social{
+//     margin-left: 70px;
+// }
+
+// .footer-social--text{
+//     margin-bottom: 20px;
+//     margin-top: 12px;
+//     font-family: var(--main-font);
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 16px;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+
+//     color: var(--title-color);
+// }
+
+// .footer-social__list{
+//     display:flex;
+//     justify-content: center;
+// }
+
+// .footer-social__title{
+//     &:not(:last-child) {
+//         margin-right: 10px;
+//     }
+// }
+
+
+// .footer-social__icon{
+//     display:flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     fill: var(--title-color);
+//     background-color: rgba(255, 255, 255, 0.1);
+
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+//     &:hover ,
+//     &:focus {
+//         background-color: var(--accent-color);
+//     }
+// }
+
+// .footer-social__title--icon{
+//     width: 20px;
+//     height: 20px;
+// }
+
+// .footer-mailing__list{
+//     display: flex;
+// }
+
+// .footer-mailing--header{
+//     margin-bottom: 20px;
+//     margin-top: 12px;
+//     font-family: var(--main-font);
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 16px;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+
+//     color: var(--title-color);
+// }
+
+// .footer-mailing{
+//     margin-left: 95px;
+// }
+
+// .footer-mailing__list--mail{
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     box-sizing: border-box;
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//     width: 358px;
+//     height: 50px;
+//     left: 815px;
+//     top: 2785px;
+//     background: #2F303A;
+//     color: var(--title-color);
+//     padding-left: 16px;
+//     font-family: var(--main-font);
+//     font-weight: 400;
+//     font-size: 16px;
+    
+//     &::placeholder{
+//         font-family: var(--main-font);
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 1.25;
+//         color: rgba(255, 255, 255, 0.6);
+//     }
+// }
+// ___________________________________________________________
+// .footer-mailing__list--btn{
+//     padding-left: 24px;
+//     width: 200px;
+//     height: 50px;
+//     margin-left: 12px;
+//     display: flex;
+//     align-items: center;
+// }
+
+// .footer-mailing__list--btn-icon{
+//     width: 24px;
+//     height: 24px;
+//     fill:var(--title-color);
+//     margin-left: 10px;
+// }

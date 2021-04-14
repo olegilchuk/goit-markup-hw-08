@@ -19,14 +19,14 @@
     border-radius: 0px 0px 4px 4px;
 
     &:not(:last-child){
-        margin-bottom: var(--section-mr);
+        // margin-bottom: 30px;
     }
 }
 
 
 
 .usteam-item{
-    padding-top: var(--section-mr);
+    padding-top: 30px;
     padding-bottom: 24px;
     background: var(--title-color);
 }
@@ -67,6 +67,13 @@
         max-width: 450px;
         height: 460px;
     }
+
+    .usteam-blok{
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+    
     
 }
 
@@ -86,6 +93,7 @@
         flex-basis: calc(100% / 2 - 30px);
         margin-top: 30px;
         margin-left: 30px;
+        
     }
 
     .usteam-blok__img{
@@ -96,7 +104,6 @@
 
 @media screen and (min-width: 1200px){
     .usteam-blok{
-    
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     flex-basis: calc(100% / 4 - 30px);

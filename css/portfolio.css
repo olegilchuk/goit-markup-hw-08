@@ -649,9 +649,6 @@ body {
 
 .price-img-link__position {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 
@@ -661,6 +658,8 @@ body {
   font-size: 18px;
   line-height: 1.55;
   height: 100%;
+  bottom: 0;
+  left: 0;
   padding: 63px 24px;
   transform: translatex(100%);
   overflow: auto;

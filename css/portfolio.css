@@ -163,16 +163,18 @@ body {
 }
 
 .model {
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--title-color);
   z-index: 1001;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  overflow: auto;
 }
 
 .model__btn-close-model {
@@ -200,17 +202,22 @@ body {
   pointer-events: none;
 }
 
-.model {
-  padding: 40px;
+@media screen and (min-width: 1200px) {
+  .model {
+    width: 528px;
+    height: 581px;
+  }
 }
 
-.model-btn-push {
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 712px;
-  margin-top: 30px;
-  align-self: center;
+.model-form--model-text {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  color: var(--text-color);
 }
 
 .from-label {
@@ -218,12 +225,17 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
-  /* letter-spacing: 0.01em; */
   color: #757575;
 }
 
 .from-label:nth-child(-n+4) {
   margin-bottom: 10px;
+}
+
+.from-label__input {
+  position: relative;
+  display: block;
+  margin-top: 4px;
 }
 
 .from-input-box {
@@ -233,43 +245,6 @@ body {
   width: 100%;
   padding-left: 40px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.from-input-checkbox:checked + .from-label-input::before {
-  background: var(--accent-color);
-  border: var(--accent-color);
-  background-image: url(../img/picture/html.img/backdrop/Vector.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.from-input-checkbox:focus + .from-label-input::before,
-.from-input-checkbox:hover + .from-label-input::before {
-  box-shadow: 0 0 0 2px var(--accent-color);
-}
-
-.from-label-input {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  margin-top: 20px;
-}
-
-.from-label-input::before {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--text-color);
-  border-radius: 2px;
-  margin-right: 7px;
-  cursor: pointer;
-}
-
-.from-label__input {
-  position: relative;
-  display: block;
-  margin-top: 4px;
 }
 
 .from-input-box:focus, .from-input-box:hover {
@@ -285,7 +260,7 @@ body {
 .input-icon {
   position: absolute;
   top: 50%;
-  left: 11px;
+  left: 15px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -329,15 +304,43 @@ body {
   flex-direction: column;
 }
 
-.model-form--model-text {
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 12px;
-  color: var(--text-color);
+.model-btn-push {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 712px;
+  margin-top: 30px;
+  align-self: center;
+}
+
+.from-label-input {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.from-label-input::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--text-color);
+  border-radius: 2px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.from-input-checkbox:checked + .from-label-input::before {
+  background: var(--accent-color);
+  border: var(--accent-color);
+  background-image: url(../img/picture/html.img/backdrop/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.from-input-checkbox:focus + .from-label-input::before,
+.from-input-checkbox:hover + .from-label-input::before {
+  box-shadow: 0 0 0 2px var(--accent-color);
 }
 
 .header {
@@ -859,15 +862,33 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-list,
+  .footer-list__address-list {
+    align-items: flex-start;
+  }
   .footer-social {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
     margin-left: 70px;
-    margin-top: 0px;
+    margin-top: 12px;
   }
   .footer-mailing {
+    margin-top: 0;
     margin-left: 95px;
+    align-items: flex-start;
+  }
+  .footer-mailing__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-mailing__list--mail {
+    width: 358px;
+    height: 50px;
+    margin-bottom: 0;
+  }
+  .footer-mailing__list--btn {
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

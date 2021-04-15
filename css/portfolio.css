@@ -627,7 +627,7 @@ body {
 }
 
 .price-img-link__title {
-  padding: 20px 0 20px 24px;
+  padding: 20px 24px 20px 24px;
 }
 
 .price-img-link__title--header {
@@ -685,7 +685,7 @@ body {
     flex-basis: calc(100% / 3 - 15px);
   }
   .price-button__list {
-    margin: 15px 0 0 0;
+    margin-top: 15px;
   }
   .price-img {
     flex-direction: column;
@@ -695,7 +695,6 @@ body {
   .price-img-list {
     background: var(--title-color);
     max-width: 450px;
-    height: 404px;
     border: 1px solid #EEEEEE;
     overflow: hidden;
   }
@@ -722,7 +721,6 @@ body {
   .price-img-list {
     background: var(--title-color);
     width: 354px;
-    height: 404px;
     border: 1px solid #EEEEEE;
     margin: var(--section-mr) 0 0 var(--section-mr);
   }
@@ -746,7 +744,6 @@ body {
   .price-img-list {
     background: var(--title-color);
     width: 370px;
-    height: 404px;
     border: 1px solid #EEEEEE;
     margin: var(--section-mr) 0 0 var(--section-mr);
     overflow: hidden;

@@ -1267,4 +1267,17 @@ body {
     margin-top: 5px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 70px;
+    margin-top: 0px;
+  }
+  .footer-mailing {
+    margin-left: 95px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

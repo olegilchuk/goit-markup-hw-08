@@ -89,6 +89,10 @@
 
 
 @media screen and (min-width: 1200px){
+    .description{
+        padding-top : var(--section-pt-pb);
+        padding-bottom: var(--section-pt-pb);
+    }
    
     .description-list{
         display: flex ;

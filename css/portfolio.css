@@ -378,6 +378,9 @@ body {
     fill: var(--accent-color);
   }
   .mobil-model {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     z-index: 1001;
     top: 0;
@@ -412,7 +415,6 @@ body {
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    margin-bottom: auto;
   }
   .mobil-model-list__title:not(:last-child) {
     margin-bottom: 32px;

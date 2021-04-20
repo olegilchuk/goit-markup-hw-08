@@ -59,7 +59,7 @@
     }
 
     .description-list__title{
-        width: 450px;
+        width: 100%;
        &:not(:last-child){
             margin-bottom: var(--section-mr);
         } 

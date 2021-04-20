@@ -842,8 +842,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .usteam-blok__img {
-    max-width: 450px;
-    height: 460px;
+    max-width: 100%;
+    max-height: 100%;
   }
   .usteam-blok:not(:last-child) {
     margin-bottom: 30px;
@@ -946,10 +946,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: auto;
   }
   .clients-list__item--link {
     width: 210px;
     height: 90px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .clients-list__item {
+    margin-left: auto;
+  }
+  .clients-list {
+    padding-left: 30px;
   }
 }
 
@@ -1333,6 +1343,12 @@ body {
   .footer-mailing__list--mail {
     width: 450px;
     height: 50px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .footer-mailing__list--mail {
+    max-width: 290px;
   }
 }
 

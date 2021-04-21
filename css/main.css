@@ -169,7 +169,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
-  height: 609px;
+  max-height: 609px;
+  height: 100vh;
   background-color: var(--title-color);
   z-index: 1001;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -202,10 +203,17 @@ body {
   pointer-events: none;
 }
 
+@media screen and (max-width: 479px) {
+  .model {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .model {
     width: 528px;
-    height: 581px;
+    max-height: 581px;
   }
 }
 
@@ -449,6 +457,7 @@ body {
   }
   .mobil-model-social {
     display: flex;
+    flex-wrap: wrap;
   }
   .mobil-model-social__list:not(:last-child) {
     padding-right: 10px;

@@ -122,6 +122,8 @@
         &:not(:first-child){
             margin-bottom: 64px;
         }
+
+
     }
 
     .mobil-model-contakt__mail{
@@ -136,7 +138,7 @@
 
     .mobil-model-social{
         display: flex;
-        
+        flex-wrap: wrap;
     }
 
     .mobil-model-social__list{
